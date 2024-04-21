@@ -125,7 +125,7 @@ section .hero_container .chevron {
   width: 400px;
   border-radius: 400px;
   overflow: hidden;
-  background-image: url("/public/images/my-pic.jpg");
+  background-image: url("public/images/my-pic.jpg");
   background-size: cover;
   background-position: center center;
 }
