@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
 @keyframes move{
     0%{
         top:500px
@@ -13,62 +18,42 @@
         top:500px
     }
 }
-body{
-    width: 100%;
-    background-color: black;
-    color: white;
-}
-header{
-    margin: 0;
-    position: sticky;
-    top: 0px;
-    background-color: black;
-    z-index: 898;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 10px gray;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:10px 25px;
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
-    }
-    .brand_name{
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .menus_container{
-        display: flex;        
-        justify-content: space-around;
-        align-items: center;
-        width: 650px;
-        span,button{
-            font-size: 20px;
-        }
-        a{
-            text-decoration: none;
-            color:white;
-            padding-bottom:5px ;
-        }
-        span{
-            padding: 0px 0px 3px 0px;
-            border-bottom: 3px solid black;
-        }
-        span:hover{
-            border-bottom: 3px solid #0d6efd;
-        }
-    }
-}
 
 @media screen and (orientation:portrait){                //portrait
+    //header
+
+    header{
+        margin: 0;
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        z-index: 20;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 10px gray;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        .brand_name{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .menus_container{
+            display: none;
+        }
+    }
+
     //hero
+
     section{
         .hero{
-            height: 550px;
-            padding: 50px;
+            height: 250px;
+            padding-left: 50px;
             display: flex;
             justify-content: center;
             span{
@@ -90,12 +75,8 @@ header{
                     color: white;
                 }
             }
-            .chevron{
-                font-size: 20px;
-                position: absolute;
-                top: 400px;
-                left: 160px;
-                animation: move 2s infinite;
+            #chevron{
+                display: none;
             }
         }
     }
@@ -103,7 +84,6 @@ header{
     //about
 
     #about{
-        padding-top: 80px;
         li{
             margin-right: 40px;
         }
@@ -111,8 +91,8 @@ header{
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            // height: 1100px;
-            padding: 20px;
+            gap: 50px;
+            padding: 10px;
             .pic_container{
                 display: flex;
                 justify-content: center;
@@ -156,8 +136,7 @@ header{
     //services
 
     #services{
-        padding-top: 80px;
-        height: 1500px;
+        height: 1450px;
         .container{
             height: 100%;
         }
@@ -191,14 +170,12 @@ header{
                 transition: 2s;
                 background-image: linear-gradient(rgba(0, 0, 0, 0.6), #0d6efd);
             }
-            
         }
     }
 
     //works
 
     #works{
-        padding-top: 80px;
         .container{
             padding: 15px;
         }
@@ -314,7 +291,58 @@ header{
 }
 
 @media screen and (orientation:landscape){                //landscape
+    //header
+
+    header{
+        margin: 0;
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        z-index: 20;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 10px gray;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px 25px;
+            .mobileresume{
+                display: none;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        .brand_name{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .menus_container{
+            display: flex;        
+            justify-content: space-around;
+            align-items: center;
+            width: 650px;
+            span,button{
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+                padding-bottom:5px ;
+            }
+            span{
+                padding: 0px 0px 3px 0px;
+                border-bottom: 3px solid black;
+            }
+            span:hover{
+                border-bottom: 3px solid #0d6efd;
+            }
+        }
+    }
+
     //hero
+
     section{
         .hero{
             height: 550px;
