@@ -65,147 +65,6 @@ header .menus_container span:hover {
   border-bottom: 3px solid #0d6efd;
 }
 
-#services {
-  padding: 80px 50px 50px 50px;
-}
-#services .container {
-  padding: 20px;
-}
-#services .cards_container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-#services .cards_container .card_box {
-  width: 400px;
-  height: 400px;
-  background-color: rgb(44, 43, 43);
-  border-radius: 10px;
-  padding: 40px;
-  transition: 2s;
-}
-#services .cards_container .card_box i {
-  font-size: 20px;
-}
-#services .cards_container .card_box i, #services .cards_container .card_box h2, #services .cards_container .card_box p, #services .cards_container .card_box a {
-  margin-bottom: 25px;
-  background-color: inherit;
-  color: white;
-  text-decoration: none;
-  background-color: unset;
-}
-#services .cards_container .card_box:hover {
-  transform: translateY(-10px);
-  transition: 2s;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #0d6efd);
-}
-
-#works {
-  padding: 80px 50px 0px 50px;
-}
-#works .container {
-  padding: 20px;
-}
-#works .work_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: center;
-  margin-top: 50px;
-}
-#works .work_container .work_card {
-  height: 300px;
-  width: 380px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-#works .work_container .work_card div {
-  padding: 30px;
-  margin-top: 300px;
-  height: 305px;
-  transition: 3s;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), #0d6efd);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  text-align: center;
-}
-#works .work_container .work_card div h3, #works .work_container .work_card div i, #works .work_container .work_card div p, #works .work_container .work_card div a {
-  background-color: unset;
-  color: white;
-}
-#works .work_container .work_card:hover div {
-  transform: translateY(-305px);
-  transition: 1s;
-}
-#works .work_container img {
-  transition: 1s;
-}
-#works .work_container img:hover {
-  transform: scale(1, 1.05);
-  transition: 1s;
-  opacity: 0.2;
-}
-
-#contact {
-  padding: 50px 50px 0px 50px;
-}
-#contact .container {
-  padding: 20px;
-}
-#contact .container .contact_container {
-  display: grid;
-  grid-template-columns: 4fr 8fr;
-  margin-top: 50px;
-}
-#contact .container .contact_container div {
-  margin-top: 10px;
-}
-#contact .container .contact_container a {
-  text-decoration: unset;
-  color: white;
-}
-#contact .container .contact_container i {
-  margin-top: 10px;
-  margin-right: 20px;
-  font-size: 25px;
-}
-#contact .container .contact_container form {
-  width: 100%;
-}
-#contact .container .contact_container form dd {
-  margin-bottom: 30px;
-}
-#contact .container .contact_container form dd input {
-  height: 70px;
-  background-color: unset;
-  color: white;
-}
-#contact .container .contact_container form dd textarea {
-  height: 130px;
-  background-color: unset;
-  color: white;
-}
-#contact .container .contact_container form button {
-  background-color: #0d6efd;
-}
-
-footer {
-  padding: 50px;
-}
-footer .container {
-  padding: 20px;
-  background-color: rgb(44, 43, 43);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .container div, footer .container span, footer .container a {
-  background-color: unset;
-  text-decoration: none;
-  color: white;
-}
-
 @media screen and (orientation: portrait) {
   section .hero {
     height: 550px;
@@ -241,7 +100,6 @@ footer .container div, footer .container span, footer .container a {
   }
   #about {
     padding-top: 80px;
-    border: 2px solid blue;
   }
   #about li {
     margin-right: 40px;
@@ -250,8 +108,7 @@ footer .container div, footer .container span, footer .container a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 780px;
-    border: 2px solid blue;
+    padding: 20px;
   }
   #about .container .pic_container {
     display: flex;
@@ -260,7 +117,6 @@ footer .container div, footer .container span, footer .container a {
   }
   #about .container .text_container {
     height: 100%;
-    border: 2px solid blue;
   }
   #about .container .pic2 {
     height: 250px;
@@ -288,6 +144,152 @@ footer .container div, footer .container span, footer .container a {
     margin-bottom: 10px;
     color: #0d6efd;
     font-weight: 500;
+  }
+  #services {
+    padding-top: 80px;
+    height: 1500px;
+  }
+  #services .container {
+    height: 100%;
+  }
+  #services .cards_container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 1320px;
+  }
+  #services .cards_container .card_box {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    padding: 40px;
+    transition: 2s;
+  }
+  #services .cards_container .card_box i {
+    font-size: 20px;
+  }
+  #services .cards_container .card_box i, #services .cards_container .card_box h2, #services .cards_container .card_box p, #services .cards_container .card_box a {
+    margin-bottom: 25px;
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    background-color: unset;
+  }
+  #services .cards_container .card_box:hover {
+    transform: translateY(-10px);
+    transition: 2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), #0d6efd);
+  }
+  #works {
+    padding-top: 80px;
+  }
+  #works .container {
+    padding: 15px;
+  }
+  #works .work_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #works .work_container .work_card {
+    height: 300px;
+    width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #works .work_container .work_card div {
+    padding: 30px;
+    margin-top: 300px;
+    height: 308px;
+    border-radius: 10px;
+    transition: 3s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #0d6efd);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  #works .work_container .work_card div h3, #works .work_container .work_card div i, #works .work_container .work_card div p, #works .work_container .work_card div a {
+    background-color: unset;
+    color: white;
+  }
+  #works .work_container .work_card:hover div {
+    transform: translateY(-305px);
+    transition: 1s;
+  }
+  #works .work_container img {
+    transition: 1s;
+  }
+  #works .work_container img:hover {
+    transform: scale(1, 1.05);
+    transition: 1s;
+    opacity: 0.2;
+  }
+  #contact {
+    padding: 50px 0px;
+  }
+  #contact .container {
+    padding: 20px;
+  }
+  #contact .container .contact_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  #contact .container .contact_container div {
+    margin-top: 10px;
+  }
+  #contact .container .contact_container a {
+    text-decoration: unset;
+    color: white;
+  }
+  #contact .container .contact_container i {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  #contact .container .contact_container form {
+    width: 100%;
+  }
+  #contact .container .contact_container form dd {
+    margin-bottom: 30px;
+  }
+  #contact .container .contact_container form dd input {
+    height: 70px;
+    background-color: unset;
+    color: white;
+  }
+  #contact .container .contact_container form dd textarea {
+    height: 130px;
+    background-color: unset;
+    color: white;
+  }
+  #contact .container .contact_container form button {
+    background-color: #0d6efd;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer .container {
+    padding: 20px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .container div, footer .container span, footer .container a {
+    background-color: unset;
+    text-decoration: none;
+    color: white;
   }
 }
 @media screen and (orientation: landscape) {
@@ -371,6 +373,143 @@ footer .container div, footer .container span, footer .container a {
     margin-bottom: 10px;
     color: #0d6efd;
     font-weight: 500;
+  }
+  #services {
+    padding: 80px 50px 50px 50px;
+  }
+  #services .container {
+    padding: 20px;
+  }
+  #services .cards_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  #services .cards_container .card_box {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    padding: 40px;
+    transition: 2s;
+  }
+  #services .cards_container .card_box i {
+    font-size: 20px;
+  }
+  #services .cards_container .card_box i, #services .cards_container .card_box h2, #services .cards_container .card_box p, #services .cards_container .card_box a {
+    margin-bottom: 25px;
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    background-color: unset;
+  }
+  #services .cards_container .card_box:hover {
+    transform: translateY(-10px);
+    transition: 2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), #0d6efd);
+  }
+  #works {
+    padding: 80px 50px 0px 50px;
+  }
+  #works .container {
+    padding: 20px;
+  }
+  #works .work_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #works .work_container .work_card {
+    height: 300px;
+    width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #works .work_container .work_card div {
+    padding: 30px;
+    margin-top: 300px;
+    height: 305px;
+    transition: 3s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #0d6efd);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  #works .work_container .work_card div h3, #works .work_container .work_card div i, #works .work_container .work_card div p, #works .work_container .work_card div a {
+    background-color: unset;
+    color: white;
+  }
+  #works .work_container .work_card:hover div {
+    transform: translateY(-305px);
+    transition: 1s;
+  }
+  #works .work_container img {
+    transition: 1s;
+  }
+  #works .work_container img:hover {
+    transform: scale(1, 1.05);
+    transition: 1s;
+    opacity: 0.2;
+  }
+  #contact {
+    padding: 50px 50px 0px 50px;
+  }
+  #contact .container {
+    padding: 20px;
+  }
+  #contact .container .contact_container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-top: 50px;
+  }
+  #contact .container .contact_container div {
+    margin-top: 10px;
+  }
+  #contact .container .contact_container a {
+    text-decoration: unset;
+    color: white;
+  }
+  #contact .container .contact_container i {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  #contact .container .contact_container form {
+    width: 100%;
+  }
+  #contact .container .contact_container form dd {
+    margin-bottom: 30px;
+  }
+  #contact .container .contact_container form dd input {
+    height: 70px;
+    background-color: unset;
+    color: white;
+  }
+  #contact .container .contact_container form dd textarea {
+    height: 130px;
+    background-color: unset;
+    color: white;
+  }
+  #contact .container .contact_container form button {
+    background-color: #0d6efd;
+  }
+  footer {
+    padding: 50px;
+  }
+  footer .container {
+    padding: 20px;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container div, footer .container span, footer .container a {
+    background-color: unset;
+    text-decoration: none;
+    color: white;
   }
 }
 
