@@ -289,4 +289,15 @@ footer .container div, footer .container span, footer .container a {
   color: white;
 }
 
+@media screen and (landscape) {
+  h1 {
+    color: red;
+  }
+}
+@media screen and (portrait) {
+  h1 {
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

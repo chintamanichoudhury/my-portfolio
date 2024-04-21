@@ -286,3 +286,13 @@ footer{
         }
     }
 }
+@media screen and (landscape){
+h1{
+    color: red;
+}
+}
+@media screen and (portrait){
+h1{
+    color:red
+}
+}
