@@ -65,89 +65,6 @@ header .menus_container span:hover {
   border-bottom: 3px solid #0d6efd;
 }
 
-section .hero {
-  height: 550px;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-section .hero span {
-  color: #0d6efd;
-}
-section .hero_container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  height: 100%;
-  width: 50%;
-}
-section .hero_container div {
-  font-size: 50px;
-  font-weight: bold;
-}
-section .hero_container div a {
-  text-decoration: none;
-  color: white;
-}
-section .hero_container .chevron {
-  font-size: 30px;
-  position: absolute;
-  top: 500px;
-  left: 650px;
-  animation: move 2s infinite;
-}
-
-#about {
-  padding: 50px 50px 0px 50px;
-  padding-top: 80px;
-}
-#about li {
-  margin-right: 40px;
-}
-#about .container {
-  display: grid;
-  grid-template-columns: 4fr 8fr;
-  height: 580px;
-  padding: 20px;
-}
-#about .container .pic_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#about .container .text_container {
-  padding: 0px 50px;
-  height: 100%;
-}
-#about .container .pic2 {
-  height: 400px;
-  width: 400px;
-  border-radius: 400px;
-  overflow: hidden;
-  background-image: url("../../public/images/my-pic.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-#about .container .nav-pills .nav-link {
-  color: lightgray;
-  font-weight: bold;
-  padding: 0;
-  padding-bottom: 5px;
-  border-radius: 0;
-  border-bottom: 3px solid black;
-}
-#about .container .nav-pills .active {
-  background-color: unset;
-  border-radius: 0;
-  border-bottom: 3px solid #0d6efd;
-}
-#about .container dt {
-  margin-bottom: 10px;
-  color: #0d6efd;
-  font-weight: 500;
-}
-
 #services {
   padding: 80px 50px 50px 50px;
 }
@@ -289,14 +206,171 @@ footer .container div, footer .container span, footer .container a {
   color: white;
 }
 
-@media screen and (landscape) {
-  h1 {
-    color: red;
+@media screen and (orientation: portrait) {
+  section .hero {
+    height: 550px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  section .hero span {
+    color: #0d6efd;
+  }
+  section .hero_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+  }
+  section .hero_container div {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  section .hero_container div a {
+    text-decoration: none;
+    color: white;
+  }
+  section .hero_container .chevron {
+    font-size: 20px;
+    position: absolute;
+    top: 400px;
+    left: 160px;
+    animation: move 2s infinite;
+  }
+  #about {
+    padding-top: 80px;
+    border: 2px solid blue;
+  }
+  #about li {
+    margin-right: 40px;
+  }
+  #about .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 780px;
+    border: 2px solid blue;
+  }
+  #about .container .pic_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .container .text_container {
+    height: 100%;
+    border: 2px solid blue;
+  }
+  #about .container .pic2 {
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    overflow: hidden;
+    background-image: url("../../public/images/my-pic.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  #about .container .nav-pills .nav-link {
+    color: lightgray;
+    font-weight: bold;
+    padding: 0;
+    padding-bottom: 5px;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+  }
+  #about .container .nav-pills .active {
+    background-color: unset;
+    border-radius: 0;
+    border-bottom: 3px solid #0d6efd;
+  }
+  #about .container dt {
+    margin-bottom: 10px;
+    color: #0d6efd;
+    font-weight: 500;
   }
 }
-@media screen and (portrait) {
-  h1 {
-    color: red;
+@media screen and (orientation: landscape) {
+  section .hero {
+    height: 550px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  section .hero span {
+    color: #0d6efd;
+  }
+  section .hero_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+  }
+  section .hero_container div {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  section .hero_container div a {
+    text-decoration: none;
+    color: white;
+  }
+  section .hero_container .chevron {
+    font-size: 30px;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    animation: move 2s infinite;
+  }
+  #about {
+    padding: 50px 50px 0px 50px;
+    padding-top: 80px;
+  }
+  #about li {
+    margin-right: 40px;
+  }
+  #about .container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    height: 580px;
+    padding: 20px;
+  }
+  #about .container .pic_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .container .text_container {
+    padding: 0px 50px;
+    height: 100%;
+  }
+  #about .container .pic2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    overflow: hidden;
+    background-image: url("../../public/images/my-pic.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  #about .container .nav-pills .nav-link {
+    color: lightgray;
+    font-weight: bold;
+    padding: 0;
+    padding-bottom: 5px;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+  }
+  #about .container .nav-pills .active {
+    background-color: unset;
+    border-radius: 0;
+    border-bottom: 3px solid #0d6efd;
+  }
+  #about .container dt {
+    margin-bottom: 10px;
+    color: #0d6efd;
+    font-weight: 500;
   }
 }
 
