@@ -196,7 +196,6 @@ body {
     transition: 1s;
   }
   #works .work_container img:hover {
-    transform: scale(1, 1.05);
     transition: 1s;
     opacity: 0.2;
   }
@@ -467,7 +466,6 @@ body {
     transition: 1s;
   }
   #works .work_container img:hover {
-    transform: scale(1, 1.05);
     transition: 1s;
     opacity: 0.2;
   }
