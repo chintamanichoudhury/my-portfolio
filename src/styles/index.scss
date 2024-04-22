@@ -211,13 +211,6 @@ body{
                 transform: translateY(-305px);
                 transition: 1s;
             }
-            img{
-                transition: 1s;
-            }
-            img:hover{
-                transition: 1s;
-                opacity: 0.2;
-            }
         }
     }
 
@@ -506,13 +499,6 @@ body{
             .work_card:hover div{
                 transform: translateY(-305px);
                 transition: 1s;
-            }
-            img{
-                transition: 1s;
-            }
-            img:hover{
-                transition: 1s;
-                opacity: 0.2;
             }
         }
     }

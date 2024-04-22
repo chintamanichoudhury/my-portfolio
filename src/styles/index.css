@@ -192,13 +192,6 @@ body {
     transform: translateY(-305px);
     transition: 1s;
   }
-  #works .work_container img {
-    transition: 1s;
-  }
-  #works .work_container img:hover {
-    transition: 1s;
-    opacity: 0.2;
-  }
   #contact {
     padding: 50px 0px;
   }
@@ -461,13 +454,6 @@ body {
   #works .work_container .work_card:hover div {
     transform: translateY(-305px);
     transition: 1s;
-  }
-  #works .work_container img {
-    transition: 1s;
-  }
-  #works .work_container img:hover {
-    transition: 1s;
-    opacity: 0.2;
   }
   #contact {
     padding: 50px 50px 0px 50px;
