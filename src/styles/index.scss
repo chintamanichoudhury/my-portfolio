@@ -19,9 +19,18 @@ body{
     }
 }
 
+.preloader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    background: url("../../public/images/loader.gif") no-repeat center #ffffff;
+}
 @media screen and (orientation:portrait){                //portrait
     //header
-
+    
     header{
         margin: 0;
         position: sticky;
